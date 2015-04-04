@@ -1,8 +1,10 @@
 ﻿<Properties StartupItem="scoremore\scoremore.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="scoremore\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="scoremore\IVraagDownloadInterface.cs">
     <Files>
       <File FileName="scoremore\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="scoremore\Vraag.cs" Line="77" Column="33" />
+      <File FileName="scoremore\IVraagDownloadInterface.cs" Line="16" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,0 +1,130 @@
+MultipleChoice
+VraagTekst= Hoeveel is 1 + 1 ?
+Uitleg= 
+Antwoorden= 2;1;3;4
+
+MultipleChoice
+VraagTekst= Hoeveel is 1 + 2 ?
+Uitleg= 
+Antwoorden= 3;1;2;4
+
+MultipleChoice
+VraagTekst= Hoeveel is 6 - 1 ?
+Uitleg= 
+Antwoorden= 5;6;7;4
+
+MultipleChoice
+VraagTekst= Hoeveel is 1 * 1 ?
+Uitleg= 
+Antwoorden= 1;2;3;4
+
+MultipleChoice
+VraagTekst= Hoeveel is 1 - 1 ?
+Uitleg= 
+Antwoorden= 0;1;2;-1
+
+MultipleChoice
+VraagTekst= Hoeveel is de wortel van 4 ?
+Uitleg= 
+Antwoorden= 2;4;-2;16
+
+MultipleChoice
+VraagTekst= Hoeveel is 1^1 ?
+Uitleg= 
+Antwoorden= 1;2;11;-1
+
+MultipleChoice
+VraagTekst= Hoeveel is 1^0 ?
+Uitleg= Iets tot de macht 0 is altijd 1.
+Antwoorden= 1;0;10;-1
+
+MultipleChoice
+VraagTekst= Hoeveel is 2^0 ?
+Uitleg= Iets tot de macht 0 is altijd 1.
+Antwoorden= 1;0;2;-2
+
+MultipleChoice
+VraagTekst= Hoeveel is 6 * 8 ?
+Uitleg= 
+Antwoorden= 48;68;40;36
+
+MultipleChoice
+VraagTekst= Hoeveel is de wortel van -1 ?
+Uitleg= 
+Antwoorden= i;pi;e;1
+
+MultipleChoice
+VraagTekst= Hoeveel is 0 ?
+Uitleg= 
+Antwoorden= 0;1;36;-1
+
+MultipleChoice
+VraagTekst= Hoeveel is 2 + 4 ?
+Uitleg= 
+Antwoorden= 6;4;2;8
+
+MultipleChoice
+VraagTekst= Hoeveel is 4 * 5 ?
+Uitleg= 
+Antwoorden= 20;9;16;12
+
+MultipleChoice
+VraagTekst= Hoeveel is 1 - 8 ?
+Uitleg= 
+Antwoorden= -7;9;0;1
+
+MultipleChoice
+VraagTekst= Hoeveel is 12 - 14 ?
+Uitleg= 
+Antwoorden= -2;16;2;-4
+
+MultipleChoice
+VraagTekst= Hoeveel is 7 * 3 ?
+Uitleg= 
+Antwoorden= 21;24;10;-14
+
+MultipleChoice
+VraagTekst= Hoeveel antwoorden heeft x^2 = 9 ?
+Uitleg= 
+Antwoorden= 2;3;-3;1
+
+MultipleChoice
+VraagTekst= Hoeveel letters heeft de stelling van Pythagoras?
+Uitleg= "De stelling van Pythagoras" heeft 23 letters.
+Antwoorden= 23;3;1;0
+
+MultipleChoice
+VraagTekst= Hoeveel is 4 - 2 + 3 * 0 - 3 ?
+Uitleg= 
+Antwoorden= -1;4;-3;0
+
+MultipleChoice
+VraagTekst= Hoeveel is 2^10 ?
+Uitleg= 
+Antwoorden= 1024;210;-11;16
+
+TrueFalse
+VraagTekst= 1 - 1 = 0 ?
+Uitleg= 
+Antwoord= True
+
+TrueFalse
+VraagTekst= 6 * 4 = 10 ?
+Uitleg= 
+Antwoord= False
+
+TrueFalse
+VraagTekst= -1 * -4 = -4 ?
+Uitleg= 
+Antwoord= False
+
+TrueFalse
+VraagTekst= -7 + 3 = -4 ?
+Uitleg= 
+Antwoord= True
+
+TrueFalse
+VraagTekst= pi > e ?
+Uitleg= pi = 3,14... e = 2,718...
+Antwoord= True
+
