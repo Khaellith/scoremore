@@ -47,14 +47,14 @@ namespace scoremore
 			}
 		}
 
-		MultipleChoiceVraag(string vraagTekst,Image afbeelding, string uitleg, string[] antwoorden) {
+		public MultipleChoiceVraag(string vraagTekst,Image afbeelding, string uitleg, string[] antwoorden) {
 			this.Vraagtekst = vraagTekst;
 			this.Afbeelding = afbeelding;
 			this.Uitleg = uitleg;
 			this.Antwoorden = antwoorden;
 		}
 
-		MultipleChoiceVraag(string vraagTekst, string uitleg, string[] antwoorden) {
+		public MultipleChoiceVraag(string vraagTekst, string uitleg, string[] antwoorden) {
 			this.Vraagtekst = vraagTekst;
 			this.Uitleg = uitleg;
 			this.Antwoorden = antwoorden;
@@ -73,14 +73,14 @@ namespace scoremore
 			}
 		}
 
-		TrueFalseVraag(string vraagTekst,Image afbeelding, string uitleg, bool antwoord) {
+		public TrueFalseVraag(string vraagTekst,Image afbeelding, string uitleg, bool antwoord) {
 			this.Vraagtekst = vraagTekst;
 			this.Afbeelding = afbeelding;
 			this.Uitleg = uitleg;
 			this.Antwoord = antwoord;
 		}
 
-		TrueFalseVraag(string vraagTekst, string uitleg, bool antwoord) {
+		public TrueFalseVraag(string vraagTekst, string uitleg, bool antwoord) {
 			this.Vraagtekst = vraagTekst;
 			this.Uitleg = uitleg;
 			this.Antwoord = antwoord;
