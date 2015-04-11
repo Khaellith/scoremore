@@ -1,0 +1,17 @@
+C:\XamarinProjects\scoremore\scoremore\bin\Debug\scoremore.dll
+C:\XamarinProjects\scoremore\scoremore\bin\Debug\scoremore.pdb
+C:\XamarinProjects\scoremore\scoremore\bin\Debug\scoremore.dll.mdb
+C:\XamarinProjects\scoremore\scoremore\bin\Debug\scoremore.scoremore.apk
+C:\XamarinProjects\scoremore\scoremore\bin\Debug\scoremore.scoremore-Signed.apk
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\scoremore.dll
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\scoremore.pdb
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\android\bin\scoremore.scoremore.apk
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\layout\main.xml
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\values\strings.xml
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\drawable-hdpi\icon.png
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\drawable-mdpi\icon.png
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\drawable-xhdpi\icon.png
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\drawable-xxxhdpi\icon.png
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\R.cs.flag
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\uploadflags.txt

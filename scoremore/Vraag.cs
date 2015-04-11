@@ -3,7 +3,7 @@ using Android.Media;
 
 namespace scoremore
 {
-	abstract class Vraag
+	public abstract class Vraag
 	{
 		string vraagtekst;
 		public string Vraagtekst {

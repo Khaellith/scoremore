@@ -12,18 +12,18 @@ namespace scoremore
 		void DownloadVragen(string onderwerp, string subonderwerp);
 	}
 
-	class VragenDownloader : IVraagDownloadInterface
+	public class VragenDownloader : IVraagDownloadInterface
 	{
 		/// <summary>
 		/// Leest .txt files om local of "online" vragendatabase op te bouwen.
 		/// </summary>
 		/// <returns><c>true</c>, als database succesvol wordt opgebouwd, <c>false</c> als het .txt bestand niet gelezen kan worden.</returns>
 		/// <param name="type">Type database (local/online).</param>
-		bool CheckVragen(String type) {
+		private bool CheckVragen(String type) {
 			string pad;
 			List<KeyValuePair<String, List<KeyValuePair<String, List<Vraag>>>>> database;
 			if (type == "online") {
-				pad = "ms-appx:///Assets/online/";
+				pad = "ms-appx:///Assets/online/";//werkt niet, dus niks werkt
 				database = Singleton.OnlineDatabase;
 			} else {
 				pad = "ms-appx:///Assets/local/";
@@ -46,8 +46,8 @@ namespace scoremore
 						string soort = "";
 						string tekst = "";
 						string uitleg = "";
-						string[] antwoorden;
-						bool antwoord;
+						string[] antwoorden = {};
+						bool antwoord = false;
 						string[] onderdeelSeparator = {"\n"};
 						string[] vraagonderdelen = vraag.Split(onderdeelSeparator, StringSplitOptions.None);
 						foreach (var onderdeel in vraagonderdelen) {//TODO: support voor afbeeldingen toevoegen
@@ -75,18 +75,20 @@ namespace scoremore
 					KeyValuePair<String, List<Vraag>> dbEntry = new KeyValuePair<String, List<Vraag>>(subonderwerp, vragenlijst);
 					bool onderwerpGevonden = false;
 					bool subonderwerpGevonden = false;
+					KeyValuePair<String, List<Vraag>> gevondenSubonderwerpKVP = dbEntry;
 					foreach (var onderwerpKVP in database) {
 						if (onderwerpKVP.Key == onderwerp) {
 							onderwerpGevonden = true;
 							foreach (var subonderwerpKVP in onderwerpKVP.Value) {
 								if (subonderwerpKVP.Key == subonderwerp) {
 									subonderwerpGevonden = true;
-									subonderwerpKVP.Value = vragenlijst;
+									gevondenSubonderwerpKVP = subonderwerpKVP;
 								}
 							}
-							if (!subonderwerpGevonden) {
-								onderwerpKVP.Value.Add(dbEntry);
-							}
+							if (subonderwerpGevonden) {
+								onderwerpKVP.Value.Remove(gevondenSubonderwerpKVP);
+							} 
+							onderwerpKVP.Value.Add(dbEntry);
 						}
 					}
 					if (!onderwerpGevonden) {
@@ -107,7 +109,7 @@ namespace scoremore
 		/// Bouwt local vragendatabase op uit .txt files.
 		/// </summary>
 		/// <returns><c>true</c>, als database succesvol wordt opgebouwd, <c>false</c> als het .txt bestand niet gelezen kan worden.</returns>
-		bool CheckLocalVragen() {
+		public bool CheckLocalVragen() {
 			return CheckVragen("local");
 		}
 
@@ -115,7 +117,7 @@ namespace scoremore
 		/// Bouwt "online" vragendatabase op uit .txt files.
 		/// </summary>
 		/// <returns><c>true</c>, als database succesvol wordt opgebouwd, <c>false</c> als het .txt bestand niet gelezen kan worden.</returns>
-		bool CheckOnlineVragen() {
+		public bool CheckOnlineVragen() {
 			return CheckVragen("online");
 		}
 
@@ -124,7 +126,7 @@ namespace scoremore
 		/// </summary>
 		/// <param name="onderwerp">Onderwerp.</param>
 		/// <param name="subonderwerp">Subonderwerp.</param>
-		void DownloadVragen(string onderwerp, string subonderwerp) {
+		public void DownloadVragen(string onderwerp, string subonderwerp) {
 			//bestanden kopieren en CheckLocalVragen() gebruiken om in te lezen (niet vragen los kopieren, anders blijven oude, slechte, verwijderde vragen in local staan)
 			string sourcePath = "ms-appx:///Assets/online/" + onderwerp;
 			string targetPath =  "ms-appx:///Assets/local/" + onderwerp;
