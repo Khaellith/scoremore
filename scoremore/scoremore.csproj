@@ -15,7 +15,7 @@
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>scoremore</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,6 +67,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\TentamenStarten.axml" />
+    <AndroidResource Include="Resources\layout\VraagBeantwoorden.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -74,7 +75,10 @@
     <Folder Include="Assets\online\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\local\wiskunde\wiskunde.txt" />
+    <AndroidAsset Include="Assets\local\wiskunde\wiskunde.txt">
+      <DeployService-Deploy>True</DeployService-Deploy>
+      <DeployService-HasPathReferences>True</DeployService-HasPathReferences>
+    </AndroidAsset>
     <AndroidAsset Include="Assets\online\wiskunde\wiskunde.txt" />
   </ItemGroup>
 </Project>

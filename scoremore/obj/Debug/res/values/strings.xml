@@ -1,1 +1,1 @@
-<resources><string name="hello">Hello World, Click Me!</string><string name="app_name">scoremore</string></resources>
+<resources><string name="app_name">scoremore</string><string name="onderwerp_prompt">Selecteer een onderwerp</string><string-array name="onderwerp_array"><item>Wiskunde</item><item>Geschiedenis</item></string-array></resources>
