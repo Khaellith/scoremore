@@ -11,11 +11,10 @@ namespace scoremoreTest
 		[Test ()]
 		public void TestCase01 ()
 		{
-			List<KeyValuePair<String, List<KeyValuePair<String, List<Vraag>>>>> localDB = Singleton.LocalDatabase;
 			VragenDownloader dl = new VragenDownloader ();
 			bool wiskundeGevonden = false;
 			dl.CheckLocalVragen ();
-			foreach (var onderwerpKVP in localDB) {
+			foreach (var onderwerpKVP in Singleton.LocalDatabase) {
 				if (onderwerpKVP.Key == "wiskunde") {
 					wiskundeGevonden = true;
 				}
@@ -26,11 +25,10 @@ namespace scoremoreTest
 		[Test ()]
 		public void TestCase02 ()
 		{
-			List<KeyValuePair<String, List<KeyValuePair<String, List<Vraag>>>>> onlineDB = Singleton.OnlineDatabase;
 			VragenDownloader dl = new VragenDownloader ();
 			bool wiskundeGevonden = false;
 			dl.CheckOnlineVragen ();
-			foreach (var onderwerpKVP in onlineDB) {
+			foreach (var onderwerpKVP in Singleton.OnlineDatabase) {
 				if (onderwerpKVP.Key == "wiskunde") {
 					wiskundeGevonden = true;
 				}
@@ -41,12 +39,11 @@ namespace scoremoreTest
 		[Test ()]
 		public void TestCase03 ()
 		{
-			List<KeyValuePair<String, List<KeyValuePair<String, List<Vraag>>>>> localDB = Singleton.LocalDatabase;
 			VragenDownloader dl = new VragenDownloader ();
 			bool wiskundeGevonden = false;
 			dl.DownloadVragen ("wiskunde", "wiskunde");
 			dl.CheckLocalVragen ();
-			foreach (var onderwerpKVP in localDB) {
+			foreach (var onderwerpKVP in Singleton.LocalDatabase) {
 				if (onderwerpKVP.Key == "wiskunde") {
 					wiskundeGevonden = true;
 				}
