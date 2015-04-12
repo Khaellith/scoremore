@@ -23,10 +23,10 @@ namespace scoremore
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
+			Button ButtonTentamenMaken = FindViewById<Button> (Resource.Id.myButton);
 			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
+			ButtonTentamenMaken.Click += delegate {
+				SetContentView (Resource.Layout.TentamenStarten);
 			};
 		}
 	}
