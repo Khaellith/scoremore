@@ -54,6 +54,7 @@
     <Compile Include="Singleton.cs" />
     <Compile Include="Tentamen.cs" />
     <Compile Include="Resultaat.cs" />
+    <Compile Include="VragenDownloaden.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
