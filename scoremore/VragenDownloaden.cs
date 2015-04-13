@@ -33,7 +33,7 @@ namespace scoremore
 			dl  = new VragenDownloader();
 			dl.CheckOnlineVragen ();
 			onderwerpLijst = new List<string> ();
-			foreach (KeyValuePair<String, List<KeyValuePair<String, List<Vraag>>>> onderwerpKVP in Singleton.LocalDatabase) {
+			foreach (KeyValuePair<String, List<KeyValuePair<String, List<Vraag>>>> onderwerpKVP in Singleton.OnlineDatabase) {
 				foreach (KeyValuePair<String, List<Vraag>> subonderwerpKVP in onderwerpKVP.Value) {
 					onderwerpLijst.Add (onderwerpKVP.Key + ": " + subonderwerpKVP.Key);
 				}

@@ -17,6 +17,10 @@ public class VragenDownloaden
 <<<<<<< HEAD
 =======
 			"n_onListItemClick:(Landroid/widget/ListView;Landroid/view/View;IJ)V:GetOnListItemClick_Landroid_widget_ListView_Landroid_view_View_IJHandler\n" +
+<<<<<<< HEAD
+			"n_onBackPressed:()V:GetOnBackPressedHandler\n" +
+=======
+>>>>>>> origin/master
 >>>>>>> origin/master
 			"";
 		mono.android.Runtime.register ("scoremore.VragenDownloaden, scoremore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", VragenDownloaden.class, __md_methods);
@@ -48,6 +52,17 @@ public class VragenDownloaden
 
 	private native void n_onListItemClick (android.widget.ListView p0, android.view.View p1, int p2, long p3);
 
+<<<<<<< HEAD
+
+	public void onBackPressed ()
+	{
+		n_onBackPressed ();
+	}
+
+	private native void n_onBackPressed ();
+
+=======
+>>>>>>> origin/master
 >>>>>>> origin/master
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
