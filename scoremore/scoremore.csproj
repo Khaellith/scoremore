@@ -69,12 +69,9 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\TentamenStarten.axml" />
-<<<<<<< HEAD
     <AndroidResource Include="Resources\layout\VraagBeantwoorden.axml" />
-=======
     <AndroidResource Include="Resources\layout\VragenDownloaden.axml" />
     <AndroidResource Include="Resources\layout\ResultatenOpvragen.axml" />
->>>>>>> 02f70f2561e5ddf1275567800c8b86a8dac1d356
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
