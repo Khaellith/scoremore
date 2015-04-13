@@ -1,38 +1,15 @@
 ﻿<Properties StartupItem="scoremore\scoremore.csproj">
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_10" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="scoremore\scoremore.csproj">
     <Files>
-      <File FileName="scoremore\MainActivity.cs" Line="45" Column="107" />
-      <File FileName="scoremore\Resources\values\Strings.xml" Line="8" Column="20" />
+      <File FileName="scoremore\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="scoremore\Resources\values\Strings.xml" Line="1" Column="1" />
+      <File FileName="scoremore\IVraagDownloadInterface.cs" Line="1" Column="1" />
+      <File FileName="scoremore\scoremore.csproj" Line="73" Column="2" />
     </Files>
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="scoremore\Resultaat.cs">
-    <Files>
-      <File FileName="scoremore\IVraagDownloadInterface.cs" Line="3" Column="17" />
-      <File FileName="scoremore\Vraag.cs" Line="6" Column="29" />
-      <File FileName="scoremore\Singleton.cs" Line="25" Column="84" />
-      <File FileName="scoremoreTest\VraagDownloadTest.cs" Line="46" Column="59" />
-      <File FileName="scoremore\Tentamen.cs" Line="34" Column="3" />
-      <File FileName="scoremore\Resultaat.cs" Line="27" Column="14" />
-    </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True">
-          <Node name="scoremoreTest" expanded="True">
-            <Node name="scoremoreTest" expanded="True">
-              <Node name="Test" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
->>>>>>> c405c4ca2f699c5edbd81e1a4ceaacd73340052b
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.scoremore AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>
