@@ -1,4 +1,5 @@
 ﻿<Properties StartupItem="scoremore\scoremore.csproj">
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
   <MonoDevelop.Ide.Workbench>
     <Files>
@@ -9,6 +10,15 @@
       <File FileName="scoremore\Tentamen.cs" Line="17" Column="50" />
       <File FileName="scoremore\Resultaat.cs" Line="29" Column="68" />
       <File FileName="scoremore\MainActivity.cs" Line="16" Column="3" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="scoremore\scoremore.csproj">
+    <Files>
+      <File FileName="scoremore\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="scoremore\Resources\values\Strings.xml" Line="1" Column="1" />
+      <File FileName="scoremore\IVraagDownloadInterface.cs" Line="1" Column="1" />
+      <File FileName="scoremore\scoremore.csproj" Line="73" Column="2" />
+>>>>>>> origin/master
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.NUnit.TestPad">
@@ -24,5 +34,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.scoremore AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>
