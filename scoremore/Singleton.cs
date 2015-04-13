@@ -31,6 +31,17 @@ namespace scoremore
 			}
 		}
 
+		private static User currentUser;
+
+		public static User CurrentUser {
+			get {
+				return currentUser;
+			}
+			set {
+				currentUser = value;
+			}
+		}
+
 		private Singleton() {}
 
 		public static Singleton Instance

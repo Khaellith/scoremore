@@ -37,3 +37,4 @@ C:\Users\Nieki\Documents\GitHub\scoremore\scoremore\obj\Debug\res\layout\tentame
 C:\Users\Nieki\Documents\GitHub\scoremore\scoremore\obj\Debug\R.cs.flag
 C:\Users\Nieki\Documents\GitHub\scoremore\scoremore\obj\Debug\uploadflags.txt
 C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\layout\vraagbeantwoorden.xml
+C:\XamarinProjects\scoremore\scoremore\obj\Debug\res\layout\resultaatbekijken.xml

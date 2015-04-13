@@ -1,1 +1,4 @@
 scoremore.MainActivity;scoremore.MainActivity
+scoremore.VragenDownloaden;scoremore.VragenDownloaden
+scoremore.ResultatenOpvragen;scoremore.ResultatenOpvragen
+scoremore.ResultaatBekijken;scoremore.ResultaatBekijken

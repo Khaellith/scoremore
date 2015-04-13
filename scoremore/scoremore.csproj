@@ -55,6 +55,8 @@
     <Compile Include="Tentamen.cs" />
     <Compile Include="Resultaat.cs" />
     <Compile Include="VragenDownloaden.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="ResultatenOpvragen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -73,6 +75,7 @@
     <AndroidResource Include="Resources\layout\VraagBeantwoorden.axml" />
     <AndroidResource Include="Resources\layout\VragenDownloaden.axml" />
     <AndroidResource Include="Resources\layout\ResultatenOpvragen.axml" />
+    <AndroidResource Include="Resources\layout\ResultaatBekijken.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

@@ -29,13 +29,21 @@ namespace scoremore
 			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
 //			spinnerOnderwerp.Adapter = adapter;
 
-			// Get our button from the layout resource,
-			// and attach an event to it
 			Button ButtonTentamenMaken = FindViewById<Button> (Resource.Id.myButton);
 			
 			ButtonTentamenMaken.Click += delegate {
 				SetContentView (Resource.Layout.TentamenStarten);
-			};				
+			};
+
+			Button downloadButton = FindViewById<Button> (Resource.Id.button2);
+			downloadButton.Click += delegate {
+				SetContentView(Resource.Layout.VragenDownloaden);
+			};
+
+			Button resultaatButton = FindViewById<Button> (Resource.Id.button3);
+			resultaatButton.Click += delegate {
+				SetContentView(Resource.Layout.ResultatenOpvragen);
+			};
 		}
 
 		private void spinnerOnderwerp_ItemSelected (object sender, AdapterView.ItemSelectedEventArgs e)
