@@ -3,7 +3,7 @@
     <string name="onderwerp_prompt">Selecteer een onderwerp</string>
     <string-array name="onderwerp_array">
     	<item>Kies een onderwerp</item>
-        <item>Wiskunde</item>
+        <item>Wiskunde: Wiskunde</item>
         <item>Geschiedenis</item>
     </string-array>
 

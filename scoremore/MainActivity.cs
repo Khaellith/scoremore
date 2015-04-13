@@ -41,22 +41,10 @@ namespace scoremore
 		private void spinner_ItemSelected (object sender, AdapterView.ItemSelectedEventArgs e)
 		{
 			Spinner spinner = (Spinner)sender;
-			string toast = string.Format ("Het gekozen onderwerp is {0}", spinner.GetItemAtPosition (e.Position));
 
 			if (e.Position == 1) {
-				string test = "Hallo";
-				Toast.MakeText (this, test, ToastLength.Long).Show ();
-				Spinner spinnerSubonderwerp = FindViewById<Spinner> (Resource.Id.spinner1);
-
-				spinnerSubonderwerp.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinner_ItemSelected);
-				var adapter1 = ArrayAdapter.CreateFromResource (
-					               this, Resource.Array.subonderwerpWiskunde_array, Android.Resource.Layout.SimpleSpinnerItem);
-
-				adapter1.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
-				spinnerSubonderwerp.Adapter = adapter1;
-
-				spinner_ItemSelected (spinnerSubonderwerp, AdapterView.ItemSelectedEventArgs e));
-		
+				string onderwerp = "wiskunde";
+				string subonderwerp = "wiskunde";
 
 			}
 		}

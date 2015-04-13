@@ -79,8 +79,8 @@ namespace scoremore
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060007
-			public const int button1 = 2131099655;
+			// aapt resource value: 0x7f06000a
+			public const int button1 = 2131099658;
 			
 			// aapt resource value: 0x7f060001
 			public const int button2 = 2131099649;
@@ -91,17 +91,26 @@ namespace scoremore
 			// aapt resource value: 0x7f060000
 			public const int myButton = 2131099648;
 			
-			// aapt resource value: 0x7f060004
-			public const int spinner = 2131099652;
+			// aapt resource value: 0x7f060006
+			public const int radioButton1 = 2131099654;
+			
+			// aapt resource value: 0x7f060007
+			public const int radioButton2 = 2131099655;
+			
+			// aapt resource value: 0x7f060008
+			public const int radioButton3 = 2131099656;
 			
 			// aapt resource value: 0x7f060005
-			public const int spinner1 = 2131099653;
+			public const int radioGroup1 = 2131099653;
+			
+			// aapt resource value: 0x7f060004
+			public const int spinner = 2131099652;
 			
 			// aapt resource value: 0x7f060002
 			public const int textView1 = 2131099650;
 			
-			// aapt resource value: 0x7f060006
-			public const int textView2 = 2131099654;
+			// aapt resource value: 0x7f060009
+			public const int textView2 = 2131099657;
 			
 			static Id()
 			{
