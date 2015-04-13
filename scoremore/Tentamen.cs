@@ -14,10 +14,10 @@ namespace scoremore
 		{
 			this.onderwerp = onderwerp;
 			this.subonderwerp = subonderwerp;
-			List<Vraag> databaseVragen;
+			List<Vraag> databaseVragen = new List<Vraag>();
 			foreach (KeyValuePair<String, List<KeyValuePair<String, List<Vraag>>>> onderwerpKVP in Singleton.LocalDatabase) {
 				if (onderwerpKVP.Key == onderwerp) {
-					foreach (KeyValuePair<String, List<Vraag>> subonderwerpKVP in onderwerpKVP) {
+					foreach (KeyValuePair<String, List<Vraag>> subonderwerpKVP in onderwerpKVP.Value) {
 						if (subonderwerpKVP.Key == subonderwerp) {
 							databaseVragen = subonderwerpKVP.Value;
 						}

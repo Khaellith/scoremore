@@ -1,15 +1,24 @@
 ﻿<Properties StartupItem="scoremore\scoremore.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="scoremore\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="scoremore\IVraagDownloadInterface.cs" Line="3" Column="17" />
-      <File FileName="scoremore\Vraag.cs" Line="1" Column="1" />
+      <File FileName="scoremore\IVraagDownloadInterface.cs" Line="133" Column="44" />
+      <File FileName="scoremore\Vraag.cs" Line="96" Column="40" />
       <File FileName="scoremore\Singleton.cs" Line="1" Column="1" />
-      <File FileName="scoremoreTest\VraagDownloadTest.cs" Line="1" Column="1" />
-      <File FileName="scoremore\Tentamen.cs" Line="34" Column="3" />
-      <File FileName="scoremore\Resultaat.cs" Line="27" Column="14" />
-      <File FileName="scoremore\MainActivity.cs" Line="22" Column="38" />
+      <File FileName="scoremoreTest\VraagDownloadTest.cs" Line="46" Column="50" />
+      <File FileName="scoremore\Tentamen.cs" Line="17" Column="50" />
+      <File FileName="scoremore\Resultaat.cs" Line="29" Column="68" />
+      <File FileName="scoremore\MainActivity.cs" Line="16" Column="3" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True">
+          <Node name="scoremoreTest" expanded="True">
+            <Node name="scoremoreTest" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

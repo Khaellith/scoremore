@@ -33,6 +33,8 @@ namespace scoremore
 				uitleg = value;
 			}
 		}
+
+		public abstract bool Vergelijk (string value);
 	}
 
 	class MultipleChoiceVraag : Vraag
@@ -59,6 +61,10 @@ namespace scoremore
 			this.Uitleg = uitleg;
 			this.Antwoorden = antwoorden;
 		}
+
+		public override bool Vergelijk(string value) {
+			return (Antwoorden [0] == value);
+		}
 	}
 
 	class TrueFalseVraag : Vraag
@@ -84,6 +90,10 @@ namespace scoremore
 			this.Vraagtekst = vraagTekst;
 			this.Uitleg = uitleg;
 			this.Antwoord = antwoord;
+		}
+
+		public override bool Vergelijk(string value) {
+			return (Antwoord == (value.ToLower() == "true"));
 		}
 	}
 }

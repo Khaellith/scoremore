@@ -18,6 +18,9 @@ namespace scoremore
 			this.antwoorden = antwoorden;
 			int goed = 0;
 			foreach (KeyValuePair<Vraag, String> antwoord in antwoorden) {
+				if (antwoord.Key.Vergelijk (antwoord.Value))
+					goed++;
+				/*
 				if (antwoord.Key.GetType == MultipleChoiceVraag) {
 					if (antwoord.Key.Antwoorden[0] == antwoord.Value) {
 						goed++;
@@ -27,6 +30,7 @@ namespace scoremore
 						goed++;
 					}
 				}
+				*/
 			}
 			cijfer = goed / antwoorden.Count;
 		}
