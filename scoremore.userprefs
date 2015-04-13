@@ -1,15 +1,11 @@
 ﻿<Properties StartupItem="scoremore\scoremore.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_10" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="scoremore\Vraag.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\XamarinProjects\scoremore\scoremore\MainActivity.cs">
     <Files>
       <File FileName="scoremoreTest\VraagDownloadTest.cs" Line="1" Column="1" />
-      <File FileName="scoremore\Vraag.cs" Line="82" Column="3" />
+      <File FileName="scoremore\Vraag.cs" Line="1" Column="1" />
+      <File FileName="c:\XamarinProjects\scoremore\scoremore\MainActivity.cs" Line="30" Column="3" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

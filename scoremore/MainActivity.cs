@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace scoremore
 {
-	[Activity (Label = "scoremore", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "scoremore", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 	public class MainActivity : Activity
 	{
 
@@ -22,12 +22,12 @@ namespace scoremore
 
 			Spinner spinnerOnderwerp = FindViewById<Spinner> (Resource.Id.spinner1);
 
-			spinnerOnderwerp.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinnerOnderwerp_ItemSelected);
+//			spinnerOnderwerp.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinnerOnderwerp_ItemSelected);
 			var adapter = ArrayAdapter.CreateFromResource (
 				this, Resource.Array.onderwerp_array, Android.Resource.Layout.SimpleSpinnerItem);
 
 			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
-			spinnerOnderwerp.Adapter = adapter;
+//			spinnerOnderwerp.Adapter = adapter;
 
 			// Get our button from the layout resource,
 			// and attach an event to it
