@@ -57,8 +57,7 @@ namespace scoremore
 				string subonderwerp = "wiskunde";
 
 			}
-		}
-			
+		}			
 	}
 }
 
