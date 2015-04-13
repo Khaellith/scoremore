@@ -1,1 +1,1 @@
-C:\XamarinProjects\scoremore\scoremore\bin\Debug\scoremore.dll
+C:\Users\Nieki\Documents\GitHub\scoremore\scoremore\bin\Debug\scoremore.dll

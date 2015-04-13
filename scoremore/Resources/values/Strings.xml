@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">scoremore</string>
-	<string name="onderwerp_prompt">Selecteer een onderwerp</string>
-	<string-array name="onderwerp_array">
-        <item>Wiskunde</item>
+    <string name="onderwerp_prompt">Selecteer een onderwerp</string>
+    <string-array name="onderwerp_array">
+    	<item>Kies een onderwerp</item>
+        <item>Wiskunde: Wiskunde</item>
         <item>Geschiedenis</item>
     </string-array>
+
+    <string name="subonderwerp_prompt">Selecteer een subonderwerp</string>
+    <string-array name="subonderwerpWiskunde_array">
+    	<item>Kies een subonderwerp</item>
+    	<item>Wiskunde</item>
+    	</string-array>
 </resources>

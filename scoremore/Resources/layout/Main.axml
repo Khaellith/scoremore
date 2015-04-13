@@ -13,7 +13,6 @@
         android:linksClickable="true"
         android:visibility="visible"
         android:clickable="true"
-        android:onClick="@string/app_name"
         android:enabled="true" />
     <Button
         android:text="Vragenset downloaden"

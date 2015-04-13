@@ -1,4 +1,7 @@
 scoremore.MainActivity;scoremore.MainActivity
 scoremore.VragenDownloaden;scoremore.VragenDownloaden
+<<<<<<< HEAD
+=======
 scoremore.ResultatenOpvragen;scoremore.ResultatenOpvragen
 scoremore.ResultaatBekijken;scoremore.ResultaatBekijken
+>>>>>>> origin/master

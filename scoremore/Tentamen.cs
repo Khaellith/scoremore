@@ -7,7 +7,7 @@ namespace scoremore
 	public class Tentamen
 	{
 		List<Vraag> vragen;
-		String onderwerp;
+		public String onderwerp;
 		String subonderwerp;
 
 		public Tentamen (string onderwerp, string subonderwerp, int aantalVragen)

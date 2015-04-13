@@ -19,21 +19,23 @@ namespace scoremore
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
-
-			Spinner spinnerOnderwerp = FindViewById<Spinner> (Resource.Id.spinner1);
-
-//			spinnerOnderwerp.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinnerOnderwerp_ItemSelected);
-			var adapter = ArrayAdapter.CreateFromResource (
-				this, Resource.Array.onderwerp_array, Android.Resource.Layout.SimpleSpinnerItem);
-
-			adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
-//			spinnerOnderwerp.Adapter = adapter;
-
+		
+			// Get our button from the layout resource,
+			// and attach an event to it
 			Button ButtonTentamenMaken = FindViewById<Button> (Resource.Id.myButton);
 			
 			ButtonTentamenMaken.Click += delegate {
 				SetContentView (Resource.Layout.TentamenStarten);
-			};
+
+				Spinner spinnerOnderwerp = FindViewById<Spinner> (Resource.Id.spinner);
+
+				spinnerOnderwerp.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinner_ItemSelected);
+				var adapter = ArrayAdapter.CreateFromResource (
+					this, Resource.Array.onderwerp_array, Android.Resource.Layout.SimpleSpinnerItem);
+
+				adapter.SetDropDownViewResource (Android.Resource.Layout.SimpleSpinnerDropDownItem);
+				spinnerOnderwerp.Adapter = adapter;
+			};				
 
 			Button downloadButton = FindViewById<Button> (Resource.Id.button2);
 			downloadButton.Click += delegate {
@@ -46,14 +48,19 @@ namespace scoremore
 			};
 		}
 
-		private void spinnerOnderwerp_ItemSelected (object sender, AdapterView.ItemSelectedEventArgs e)
+		private void spinner_ItemSelected (object sender, AdapterView.ItemSelectedEventArgs e)
 		{
-			Spinner spinnerOnderwerp = (Spinner)sender;
+			Spinner spinner = (Spinner)sender;
 
-			string toast = string.Format ("Het onderwerp is {0}", spinnerOnderwerp.GetItemAtPosition (e.Position));
+			if (e.Position == 1) {
+				string onderwerp = "wiskunde";
+				string subonderwerp = "wiskunde";
 
+			}
 		}
+			
 	}
 }
+
 
 
