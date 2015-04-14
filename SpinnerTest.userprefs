@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="SpinnerTest\SpinnerTest.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_10" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="SpinnerTest\Resources\values\Strings.xml" Line="1" Column="1" />
+      <File FileName="SpinnerTest\MainActivity.cs" Line="15" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SpinnerTest AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

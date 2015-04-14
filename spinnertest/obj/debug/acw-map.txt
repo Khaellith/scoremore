@@ -1,0 +1,6 @@
+SpinnerTest.MaakTentamen;spinnertest.MaakTentamen
+SpinnerTest.ResultatenOpvragen;spinnertest.ResultatenOpvragen
+SpinnerTest.ResultaatBekijken;spinnertest.ResultaatBekijken
+SpinnerTest.VragenDownloaden;spinnertest.VragenDownloaden
+SpinnerTest.MainActivity;spinnertest.MainActivity
+SpinnerTest.SpinnerActivity;spinnertest.SpinnerActivity

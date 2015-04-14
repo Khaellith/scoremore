@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="SpinnerTest\ScoreMore.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.ZX1B22QPQ7" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpinnerTest\MaakTentamen.cs">
+    <Files>
+      <File FileName="SpinnerTest\MainActivity.cs" Line="35" Column="5" />
+      <File FileName="SpinnerTest\VragenDownloaden.cs" Line="1" Column="1" />
+      <File FileName="spinnertest\SpinnerActivity.cs" Line="1" Column="1" />
+      <File FileName="SpinnerTest\MaakTentamen.cs" Line="93" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ScoreMore AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>
