@@ -1,1 +1,1 @@
-C:\XamarinProjects\SpinnerTest\SpinnerTest\bin\Debug\SpinnerTest.dll
+C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\bin\Debug\SpinnerTest.dll

@@ -27,6 +27,10 @@ namespace SpinnerTest
 		private RadioGroup rg;
 		int i;
 		List<Vraag> vragenlijst;
+		private List<String> antwoordA;
+		private List<String> antwoordB;
+		private List<String> antwoordC;
+		private List<String> antwoordD;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -43,6 +47,10 @@ namespace SpinnerTest
 					vragenlijst = subonderwerpKVP.Value;
 				}
 			}
+			antwoordA = new List<string> (){ "2","4","7","3","-1","16","11","1","-2","68","pi","36","6","12","-7","16","24","-3","0","4","210"};
+			antwoordB = new List<string> (){ "1","2","6","2","1","2","2","0", "2","48","i","1","8","9","0","2","21","3","23","-1","1024"};
+			antwoordC = new List<string> (){ "3","1","5","4","2","4","-1","10","0","40","1","0","4","20","9","-2","10","2","3","0","-11"};
+			antwoordD = new List<string> (){ "4","3","4","1","0","-2","1","-1","1","36","e","-1","2","16","1","-4","-14","1","-1","-3","16"};
 
 
 			_textView = FindViewById<TextView>(Resource.Id.velocity_text_view);
@@ -52,16 +60,16 @@ namespace SpinnerTest
 			vraag.Text = vragenlijst.ElementAt (i).Vraagtekst;
 
 			A = FindViewById<RadioButton> (Resource.Id.radioButton1);
-			A.Text = "A: 2";
+			A.Text = antwoordA[i];
 
 			B = FindViewById<RadioButton> (Resource.Id.radioButton2);
-			B.Text = "B: 1";
+			B.Text = antwoordB[i];
 
 			C = FindViewById<RadioButton> (Resource.Id.radioButton3);
-			C.Text = "C: 3";
+			C.Text = antwoordC[i];
 
 			D = FindViewById<RadioButton> (Resource.Id.radioButton4);
-			D.Text = "D: 4";
+			D.Text = antwoordD[i];
 			rg = FindViewById<RadioGroup> (Resource.Id.radioGroup1);
 
 			_gestureDetector = new GestureDetector(this);
@@ -85,14 +93,14 @@ namespace SpinnerTest
 		public bool OnFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY)
 		{
 			_textView.Text = String.Format("Fling velocity: {0} x {1}", velocityX, velocityY);
-			if (velocityX < 0 ){
-				{
+			if (velocityX < 0 && i >= 0 && i <= 20 ){
+				if( i < 20 ){
 					i = i + 1;
 					vraag.Text = vragenlijst.ElementAt (i).Vraagtekst;
-					A.Text = "A: 4";
-					B.Text = "B: 2";
-					C.Text = "C: 1";
-					D.Text = "D: 3";
+					A.Text = antwoordA[i];
+					B.Text = antwoordB[i];
+					C.Text = antwoordC[i];
+					D.Text = antwoordD[i];
 					A.Checked = true;
 				}
 			}
@@ -101,6 +109,10 @@ namespace SpinnerTest
 				if (i > 0) {
 					i = i - 1;
 					vraag.Text = vragenlijst.ElementAt (i).Vraagtekst;
+					A.Text = antwoordA[i];
+					B.Text = antwoordB[i];
+					C.Text = antwoordC[i];
+					D.Text = antwoordD[i];
 					A.Checked = true;
 				}
 			}
