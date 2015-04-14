@@ -1,1 +1,1 @@
-C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\bin\Debug\SpinnerTest.dll
+C:\Users\Javier Sassen\Documents\scoremore\spinnertest\bin\Debug\SpinnerTest.dll
