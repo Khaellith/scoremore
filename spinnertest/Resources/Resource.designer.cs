@@ -136,11 +136,11 @@ namespace SpinnerTest
 			// aapt resource value: 0x7f06000a
 			public const int textView7 = 2131099658;
 			
-			// aapt resource value: 0x7f060013
-			public const int textview1 = 2131099667;
-			
 			// aapt resource value: 0x7f060012
-			public const int velocity_text_view = 2131099666;
+			public const int textview1 = 2131099666;
+			
+			// aapt resource value: 0x7f060013
+			public const int textview2 = 2131099667;
 			
 			static Id()
 			{

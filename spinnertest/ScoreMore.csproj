@@ -55,6 +55,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="..\spinnertest\SpinnerActivity.cs" />
     <Compile Include="SpinnerActivity.cs" />
+    <Compile Include="MaakTentamenGeschiedenis.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

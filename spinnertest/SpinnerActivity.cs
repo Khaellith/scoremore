@@ -35,13 +35,18 @@ namespace SpinnerTest
 		private void spinner_ItemSelected (object sender, AdapterView.ItemSelectedEventArgs e)
 		{
 			Spinner spinner = (Spinner)sender;
+			Button startTentamen = FindViewById<Button> (Resource.Id.button1);
 			string toast = string.Format ("Het onderwerp is {0}", spinner.GetItemAtPosition (e.Position));
 			Toast.MakeText (this, toast, ToastLength.Long).Show ();
 
 			if (e.Position == 1) {
-				Button startTentamen = FindViewById<Button> (Resource.Id.button1);
 				startTentamen.Click += delegate {
 					StartActivity (typeof(MaakTentamen));
+				};
+			}
+			else if (e.Position == 2) {
+				startTentamen.Click += delegate {
+					StartActivity (typeof(MaakTentamenGeschiedenis));
 				};
 			}
 		}

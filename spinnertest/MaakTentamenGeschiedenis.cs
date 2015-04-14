@@ -14,10 +14,10 @@ using Android.Widget;
 
 namespace SpinnerTest
 {
-	[Activity (Label = "MaakTentamen")]			
-	public class MaakTentamen : Activity, GestureDetector.IOnGestureListener
+	[Activity (Label = "MaakTentamenGeschiedenis", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]			
+	public class MaakTentamenGeschiedenis : Activity, GestureDetector.IOnGestureListener
 	{
-		private GestureDetector _gestureDetector;
+		private GestureDetector gestureDetector;
 		private TextView vraag;
 		private RadioButton A;
 		private RadioButton B;
@@ -25,7 +25,7 @@ namespace SpinnerTest
 		private RadioButton D; 
 		private RadioGroup rg;
 		int i;
-		List<Vraag> vragenlijst;
+		List<String> vragenlijst;
 		private List<String> antwoordA;
 		private List<String> antwoordB;
 		private List<String> antwoordC;
@@ -34,25 +34,18 @@ namespace SpinnerTest
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			i = 0;
 			SetContentView (Resource.Layout.VraagBeantwoorden);
 
-			vragenlijst = new List<Vraag>();
-			VragenDownloader dl = new VragenDownloader ();
-			dl.CheckOnlineVragen ();
-			dl.DownloadVragen ("wiskunde","wiskunde");
-			foreach (KeyValuePair<String, List<KeyValuePair<String, List<Vraag>>>> onderwerpKVP in Singleton.LocalDatabase) {
-				foreach (KeyValuePair<String, List<Vraag>> subonderwerpKVP in onderwerpKVP.Value) {
-					vragenlijst = subonderwerpKVP.Value;
-				}
-			}
-			antwoordA = new List<string> (){ "2","4","7","3","-1","16","11","1","-2","68","pi","36","6","12","-7","16","24","-3","0","4","210"};
-			antwoordB = new List<string> (){ "1","2","6","2","1","2","2","0", "2","48","i","1","8","9","0","2","21","3","23","-1","1024"};
-			antwoordC = new List<string> (){ "3","1","5","4","2","4","-1","10","0","40","1","0","4","20","9","-2","10","2","3","0","-11"};
-			antwoordD = new List<string> (){ "4","3","4","1","0","-2","1","-1","1","36","e","-1","2","16","1","-4","-14","1","-1","-3","16"};
+			i = 0;
+
+			vragenlijst = new List<string>(){"Wie was de aanstichter van de Tweede Wereldoorlog?", "Wat wilde Hitler met de oorlog bereiken?", "Een bekend Nederlands concentratiekamp was...","Uit welk(e) land(en) kwam(en) de 'geallieerden'?","Waar staat het begrip 'D-day'"};
+			antwoordA = new List<string> (){ "Josef Mengele","Opsluiting van alle joden en zigeuners in gevangenissen en concentratiekampen.","Westerbork","Duitsland en Oostenrijk","Division-day"};
+			antwoordB = new List<string> (){ "Adolf Eichmann","Eén groot Duits Rijk in Europa met een zuiver Duitse bevolking.","Mechelen","Japan","Demolishion-day"};
+			antwoordC = new List<string> (){ "Adolf Hitler","Uitroeiing van alle burgers.","Auschwitz","Italië, Oostenrijk en Spanje","Direction-day"};
+			antwoordD = new List<string> (){ "Joseph Goebbels","Stimulering van de werkgelegenheid: voor het maken van wapens was veel personeel nodig.","Sobibór","Frankrijk, Engeland, Rusland, de Verenigde Staten en Canada","Decision-day"};
 
 			vraag = FindViewById<TextView> (Resource.Id.textview1);
-			vraag.Text = vragenlijst.ElementAt (i).Vraagtekst;
+			vraag.Text = vragenlijst [i];
 
 			A = FindViewById<RadioButton> (Resource.Id.radioButton1);
 			A.Text = antwoordA[i];
@@ -67,17 +60,16 @@ namespace SpinnerTest
 			D.Text = antwoordD[i];
 			rg = FindViewById<RadioGroup> (Resource.Id.radioGroup1);
 
-			_gestureDetector = new GestureDetector(this);
+			gestureDetector = new GestureDetector(this);
 
-			Button naarResultaat = FindViewById<Button> (Resource.Id.button1);
-			naarResultaat.Click += delegate {
-				SetContentView(Resource.Layout.ResultaatBekijken);
-			};
 			// Create your application here
 		}
+
+
+
 		public override bool OnTouchEvent(MotionEvent e)
 		{
-			_gestureDetector.OnTouchEvent(e);
+			gestureDetector.OnTouchEvent(e);
 			return false;
 		}
 
@@ -88,10 +80,10 @@ namespace SpinnerTest
 
 		public bool OnFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY)
 		{
-			if (velocityX < 0 && i >= 0 && i <= 20 ){
-				if( i < 20 ){
+			if (velocityX < 0 && i >= 0 && i <= 4 ){
+				if( i < 4 ){
 					i = i + 1;
-					vraag.Text = vragenlijst.ElementAt (i).Vraagtekst;
+					vraag.Text = vragenlijst [i];
 					A.Text = antwoordA[i];
 					B.Text = antwoordB[i];
 					C.Text = antwoordC[i];
@@ -100,10 +92,10 @@ namespace SpinnerTest
 				}
 			}
 
-			if (velocityX > 0 && i >= 0 && i <= 20) {
+			if (velocityX > 0 && i >= 0 && i <= 4) {
 				if (i > 0) {
 					i = i - 1;
-					vraag.Text = vragenlijst.ElementAt (i).Vraagtekst;
+					vraag.Text = vragenlijst[i];
 					A.Text = antwoordA[i];
 					B.Text = antwoordB[i];
 					C.Text = antwoordC[i];
@@ -111,9 +103,6 @@ namespace SpinnerTest
 					A.Checked = true;
 				}
 			}
-
-
-
 			return true;
 		}
 

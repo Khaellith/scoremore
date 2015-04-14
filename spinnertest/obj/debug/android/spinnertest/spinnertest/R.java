@@ -37,8 +37,8 @@ public final class R {
         public static final int textView5=0x7f060008;
         public static final int textView6=0x7f060009;
         public static final int textView7=0x7f06000a;
-        public static final int textview1=0x7f060013;
-        public static final int velocity_text_view=0x7f060012;
+        public static final int textview1=0x7f060012;
+        public static final int textview2=0x7f060013;
     }
     public static final class layout {
         public static final int main=0x7f030000;

@@ -44,13 +44,12 @@ C:\XamarinProjects\SpinnerTest\SpinnerTest\obj\Debug\res\layout\resultatenopvrag
 C:\XamarinProjects\SpinnerTest\SpinnerTest\obj\Debug\res\layout\vragendownloaden.xml
 C:\XamarinProjects\SpinnerTest\SpinnerTest\obj\Debug\R.cs.flag
 C:\XamarinProjects\SpinnerTest\SpinnerTest\obj\Debug\uploadflags.txt
-C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\obj\Debug\ScoreMore.csprojResolveAssemblyReference.cache
-C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\obj\Debug\SpinnerTest.dll
 C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\bin\Debug\SpinnerTest.dll
 C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\bin\Debug\SpinnerTest.pdb
 C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\bin\Debug\SpinnerTest.dll.mdb
 C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\bin\Debug\SpinnerTest.SpinnerTest.apk
 C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\bin\Debug\SpinnerTest.SpinnerTest-Signed.apk
+C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\obj\Debug\SpinnerTest.dll
 C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\obj\Debug\SpinnerTest.pdb
 C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\obj\Debug\android\bin\SpinnerTest.SpinnerTest.apk
 C:\Users\Nieki\Documents\GitHub\scoremore\SpinnerTest\obj\Debug\res\values\strings.xml
