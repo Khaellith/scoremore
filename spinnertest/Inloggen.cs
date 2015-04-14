@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace SpinnerTest
 {
-	[Activity (Label = "ScoreMore", MainLauncher = true, Icon = "@drawable/Icon")]
+	[Activity (Label = "ScoreMore", MainLauncher = true, Icon = "@drawable/scoremore", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 	public class Inloggen : Activity
 	{
 		EditText LoginNaam, Password;

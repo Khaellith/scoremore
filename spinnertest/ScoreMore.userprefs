@@ -1,6 +1,11 @@
 ﻿<Properties StartupItem="ScoreMore.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.cc50abd1" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Inloggen.cs">
+    <Files>
+      <File FileName="Inloggen.cs" Line="13" Column="34" />
+      <File FileName="MainActivity.cs" Line="12" Column="99" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

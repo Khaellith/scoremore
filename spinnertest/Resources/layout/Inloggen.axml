@@ -6,9 +6,9 @@
     android:minWidth="25px"
     android:minHeight="25px">
     <ImageView
-        android:src="@drawable/icon"
+        android:src="@drawable/scoremore"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:id="@+id/Logo" />
     <EditText
         android:layout_width="match_parent"

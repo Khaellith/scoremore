@@ -91,3 +91,8 @@ C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\res\layout\vrag
 C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\res\layout\inloggen.xml
 C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\R.cs.flag
 C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\uploadflags.txt
+C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\res\drawable-hdpi\scoremore.png
+C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\res\drawable-mdpi\scoremore.png
+C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\res\drawable-xhdpi\scoremore.png
+C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\res\drawable-xxhdpi\scoremore.png
+C:\Users\Javier Sassen\Documents\scoremore\spinnertest\obj\Debug\res\drawable-xxxhdpi\scoremore.png

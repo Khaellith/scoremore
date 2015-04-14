@@ -62,11 +62,6 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
-    <None Include="Resources\drawable-hdpi\ScoreMore.png" />
-    <None Include="Resources\drawable-mdpi\ScoreMore.png" />
-    <None Include="Resources\drawable-xhdpi\ScoreMore.png" />
-    <None Include="Resources\drawable-xxhdpi\ScoreMore.png" />
-    <None Include="Resources\drawable-xxxhdpi\ScoreMore.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -81,6 +76,11 @@
     <AndroidResource Include="Resources\layout\ResultaatBekijken.axml" />
     <AndroidResource Include="Resources\layout\ResultatenOpvragen.axml" />
     <AndroidResource Include="Resources\layout\VragenDownloaden.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ScoreMore.png" />
     <AndroidResource Include="Resources\layout\Inloggen.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />

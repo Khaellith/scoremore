@@ -8,7 +8,7 @@
     <activity android:label="Vragen Downloaden" android:screenOrientation="portrait" android:name="spinnertest.VragenDownloaden" />
     <activity android:label="scoremore" android:screenOrientation="portrait" android:name="spinnertest.MainActivity" />
     <activity android:label="SpinnerActivity" android:name="spinnertest.SpinnerActivity" />
-    <activity android:icon="@drawable/icon" android:label="ScoreMore" android:name="spinnertest.Inloggen">
+    <activity android:icon="@drawable/scoremore" android:label="ScoreMore" android:screenOrientation="portrait" android:name="spinnertest.Inloggen">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
