@@ -56,11 +56,8 @@
     <Compile Include="VragenDownloaden.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="SpinnerActivity.cs" />
-<<<<<<< HEAD
     <Compile Include="MaakTentamenGeschiedenis.cs" />
-=======
     <Compile Include="Inloggen.cs" />
->>>>>>> origin/V2
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

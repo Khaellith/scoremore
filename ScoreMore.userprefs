@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="SpinnerTest\ScoreMore.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_10" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SpinnerTest\MaakTentamen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpinnerTest\MaakTentamenGeschiedenis.cs">
     <Files>
       <File FileName="SpinnerTest\MainActivity.cs" Line="35" Column="5" />
       <File FileName="SpinnerTest\VragenDownloaden.cs" Line="1" Column="1" />
-      <File FileName="SpinnerTest\MaakTentamen.cs" Line="67" Column="26" />
-      <File FileName="SpinnerTest\SpinnerActivity.cs" Line="46" Column="5" />
-      <File FileName="SpinnerTest\MaakTentamenGeschiedenis.cs" Line="65" Column="35" />
+      <File FileName="SpinnerTest\MaakTentamen.cs" Line="1" Column="1" />
+      <File FileName="SpinnerTest\SpinnerActivity.cs" Line="1" Column="1" />
+      <File FileName="SpinnerTest\MaakTentamenGeschiedenis.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
