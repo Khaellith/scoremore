@@ -11,11 +11,13 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>SpinnerTest</AssemblyName>
     <AndroidApplication>True</AndroidApplication>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,9 +55,12 @@
     <Compile Include="User.cs" />
     <Compile Include="VragenDownloaden.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="..\spinnertest\SpinnerActivity.cs" />
     <Compile Include="SpinnerActivity.cs" />
+<<<<<<< HEAD
     <Compile Include="MaakTentamenGeschiedenis.cs" />
+=======
+    <Compile Include="Inloggen.cs" />
+>>>>>>> origin/V2
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -75,6 +80,12 @@
     <AndroidResource Include="Resources\layout\ResultaatBekijken.axml" />
     <AndroidResource Include="Resources\layout\ResultatenOpvragen.axml" />
     <AndroidResource Include="Resources\layout\VragenDownloaden.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ScoreMore.png" />
+    <AndroidResource Include="Resources\layout\Inloggen.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>
